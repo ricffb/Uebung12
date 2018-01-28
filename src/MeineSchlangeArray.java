@@ -18,6 +18,16 @@ public class MeineSchlangeArray<A> implements Warteschange<A>{
         this.ringBuffer = ringBuffer;
     }
 
+    public MeineSchlangeArray(){
+        this.size = 7;
+
+        Pointer<A>[] ringBuffer = new Pointer[size];
+        for (int i = 0; i < this.size ; i++) {
+            ringBuffer[i] = new Pointer<>(null);
+        }
+        this.ringBuffer = ringBuffer;
+    }
+
     private class Pointer<A>{
         private A data;
 

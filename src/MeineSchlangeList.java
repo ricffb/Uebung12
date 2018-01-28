@@ -4,6 +4,10 @@ public class MeineSchlangeList<A> implements Warteschange<A> {
 
     private Link<A> first;
 
+    public MeineSchlangeList() {
+        first = null;
+    }
+
     @Override
     public boolean push(A a) {
         if(isEmpty()){
